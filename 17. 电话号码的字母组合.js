@@ -14,9 +14,8 @@ var letterCombinations = function(digits) {
     // index 代表当前处理的数字在 digits 字符串中的索引位置0,1,2...
     function backtrack(index){
       if( index === digits.length ){
-        console.log(path.join(""));
+        // console.log(path.join(""));
         res.push(path.join(""))
-        
         return 
       }
       
@@ -24,7 +23,6 @@ var letterCombinations = function(digits) {
         path.push(i)
         backtrack(index+1)
         path.pop()
-
       }
     }
     backtrack(0)
