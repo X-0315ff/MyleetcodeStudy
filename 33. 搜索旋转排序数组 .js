@@ -3,7 +3,7 @@
  * @param {number} target
  * @return {number}
  */
-// 二分法
+// 二分法: 关键在于判断那边是有序的，因为数组原来是升序的，所以旋转后一定有一边是有序的
 var search = function(nums, target) {
   let left = 0, right = nums.length - 1;
   while(left <= right){
