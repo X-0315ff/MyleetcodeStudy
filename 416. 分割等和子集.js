@@ -18,7 +18,6 @@ var canPartition = function(nums) {
     const dp = new Array(tag + 1).fill(false)
     // 表示什么也不选就能凑出0
     dp[0] = true
-    
     // 遍历每个num
     for(let num of nums){
       // 关键：从后往前便利，避免重复使用num
