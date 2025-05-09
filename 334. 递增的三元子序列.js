@@ -14,6 +14,7 @@ var increasingTriplet = function(nums) {
         return true // 找到了第三个比 first 和 second 都大的数
       }
     }
-
     return false
 };
+nums = [1,1,1,1,1,1,1]
+console.log(increasingTriplet(nums));
