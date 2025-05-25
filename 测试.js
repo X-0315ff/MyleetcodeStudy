@@ -1,20 +1,4 @@
-function Person() {
-  // 此处定义同名方法 sayHi
-  this.sayHi = function () {
-    console.log('嗨!' + this.name)
-  }
-}
-
-// 为构造函数的原型对象添加方法
-Person.prototype.sayHi = function () {
-  console.log('Hi~' + this.name)
-}
-// 在构造函数的原型对象上添加属性
-Person.prototype.name = '小明'
-
-let p1 = new Person()
-p1.sayHi(); // 输出：嗨!小明
-
-let p2 = new Person()
-p2.name = '小红'
-p2.sayHi() // 输出：嗨!小红
+let a = [1, 2, new Set([3, 4]), [5], [6, [7, 8]]]
+console.log(a.flat(), 111) // 不加参数默认是1
+console.log(a.flat(0), 222) // 相当于浅拷贝
+console.log(a.flat(2), 333)   
