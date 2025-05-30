@@ -2,10 +2,7 @@
  * @param {number[][]} grid
  * @return {number}
  */
-[ [3,1,2,2],
-  [1,4,4,5],
-  [2,4,2,2],
-  [2,4,2,2]]
+
 
 var equalPairs = function(grid) {
   const rowMap = new Map()
