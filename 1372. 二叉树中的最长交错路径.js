@@ -17,7 +17,7 @@ var longestZigZag = function(root) {
 
       maxlen = Math.max(maxlen, len)
       if(isleft){
-         // 当前是从左边来
+         // 当前是从左边来   
         dfs(node.right, false, len + 1) // 如果下一个向右则路径 + 1
         dfs(node.left, true, 1) // 如果当前路径下一个方向也向左，只能重新起一条新路径。
       }else {
