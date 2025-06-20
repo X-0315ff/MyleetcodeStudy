@@ -30,9 +30,7 @@ var predictPartyVictory = function(senate) {
     
 
     return Radiant.length > 0 ? 'R' : 'D'
-     
-    
-    
+       
 };
 let senate = 'RRRDD'
 console.log(predictPartyVictory(senate));
