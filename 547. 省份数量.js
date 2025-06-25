@@ -16,9 +16,6 @@ var findCircleNum = function(isConnected) {
         }
       }
     }
-
-
-
     // 遍历所有城市
     for(let i = 0; i < n; i++){
       if(!visted[i]){
