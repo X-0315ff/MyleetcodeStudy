@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flex布局</title>
+<style scoped>
+.box {
+  width: 200px;
+  height: 200px;
+  display: flex;  /* 横向排列两个 column */
+  justify-content: space-between; /* 两个 column 两端对齐 */
+  border: 2px solid black;
+}
+
+.column {
+  /* background-color: red; ; */
+  display: flex;
+  flex-direction: column; /* 纵向排列两个 item */
+  justify-content: space-between; /* 两个 item 两端对齐 */
+}
+
+.item{
+  display: inline-block; /* 行内块元素 */
+  width: 80px;
+  height: 80px;
+  background-color: black;
+  border-radius: 50%; /* 圆形 */
+}
+
+</style>
+</head>
+  <body>
+    <div class="box">
+      <div class="column">
+        <span class="item"></span>
+        <span class="item"></span>
+      </div>
+      <div class="column">
+        <span class="item"></span>
+        <span class="item"></span>
+      </div>
+    </div>
+  </body>
+</html>
+
